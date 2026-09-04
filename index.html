@@ -1,119 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RinjaniSoftware</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary: #2c3e50;
-      --accent: #16a085;
-      --bg: #f8f9fa;
-      --text: #2d3436;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(to right, var(--primary), #34495e);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.8rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      opacity: 0.9;
-    }
-
-    section {
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    section h2 {
-      font-size: 2rem;
-      color: var(--accent);
-      margin-bottom: 20px;
-    }
-
-    footer {
-      background: #ecf0f1;
-      padding: 20px;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #636e72;
-    }
-
-    .btn {
-      background: var(--accent);
-      color: white;
-      border: none;
-      padding: 12px 25px;
-      border-radius: 6px;
-      font-size: 1rem;
-      margin-top: 20px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .btn:hover {
-      background: #138d75;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      section h2 {
-        font-size: 1.5rem;
-      }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="RinjaniGameStudio creates striking, handcrafted game worlds from Indonesia.">
+  <meta name="theme-color" content="#0c1512">
+  <meta property="og:title" content="RinjaniGameStudio">
+  <meta property="og:description" content="Small team. Vast worlds. Games shaped by wonder, place, and play.">
+  <meta property="og:image" content="assets/studio/rinjani-awakening.png">
+  <title>RinjaniGameStudio | Independent Game Studio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M7 51 26 15l8 16 6-10 17 30Z' fill='%23f15d42'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/studio/rinjani-awakening.png" as="image">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header>
-    <h1>RinjaniSoftware</h1>
-    <p>Simple solutions, strong foundations — Inspired by nature, built for people.</p>
-    <a href="#about"><button class="btn">Learn More</button></a>
+  <header class="site-header" data-header>
+    <a class="brand" href="#home" aria-label="RinjaniGameStudio home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
+      <span class="brand-name">RINJANI<span>GAME STUDIO</span></span>
+    </a>
+    <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-button>
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" aria-label="Main navigation" data-nav>
+      <a href="#projects">Projects</a>
+      <a href="#studio">Studio</a>
+      <a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">&#8599;</span></a>
+    </nav>
   </header>
 
-  <section id="about">
-    <h2>Who We Are</h2>
-    <p>RinjaniSoftware is a small independent software company focused on building practical, elegant, and reliable solutions for mobile and web platforms.</p>
-  </section>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="kicker">Independent game studio / Indonesia</p>
+        <h1 id="hero-title"><span>Small team.</span><span>Vast worlds.</span></h1>
+        <p class="hero-intro">We create memorable games shaped by wonder, place, and the simple joy of discovery.</p>
+        <a class="round-link" href="#projects" aria-label="Explore our projects">
+          <span>Explore<br>our worlds</span>
+          <b aria-hidden="true">&#8595;</b>
+        </a>
+      </div>
+      <div class="hero-index" aria-hidden="true">
+        <span>01</span><span>Rinjani Awakening</span><span>Concept world</span>
+      </div>
+    </section>
 
-  <section>
-    <h2>Our Vision</h2>
-    <p>Like Mount Rinjani — strong, dependable, and awe-inspiring — our goal is to deliver software that stands tall for years to come.</p>
-  </section>
+    <section class="manifesto" aria-labelledby="manifesto-title">
+      <p class="section-label">What moves us</p>
+      <h2 id="manifesto-title">Games should leave a place behind in your memory.</h2>
+      <p>RinjaniGameStudio is an independent team exploring atmospheric worlds, expressive play, and stories that reward curiosity.</p>
+    </section>
 
-  <section>
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:hello@rinjanisoftware.com">hello@rinjanisoftware.com</a></p>
-  </section>
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+      <div class="section-top">
+        <div>
+          <p class="section-label">Selected worlds</p>
+          <h2 id="projects-title">Projects</h2>
+        </div>
+        <div class="project-filters" role="group" aria-label="Filter projects">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" type="button" data-filter="development" aria-pressed="false">In development</button>
+          <button class="filter" type="button" data-filter="concept" aria-pressed="false">Concepts</button>
+        </div>
+      </div>
 
-  <footer>
-    &copy; 2025 RinjaniSoftware. All rights reserved.
+      <div class="project-list">
+        <article class="project project-featured" data-project="development">
+          <div class="project-media">
+            <img src="assets/studio/rinjani-awakening.png" alt="Explorer overlooking a luminous volcanic island" width="1879" height="836">
+            <span class="project-status">In development</span>
+          </div>
+          <div class="project-copy">
+            <div><p class="project-number">01 / Adventure</p><h3>Rinjani Awakening</h3></div>
+            <p>Cross a living volcanic island where every trail shifts with the mountain's breath.</p>
+          </div>
+        </article>
+
+        <article class="project" data-project="concept">
+          <div class="project-media">
+            <img src="assets/studio/echoes-below.png" alt="A diver approaching ancient ruins beneath a blue lake" width="1536" height="1024" loading="lazy">
+            <span class="project-status">Concept</span>
+          </div>
+          <div class="project-copy">
+            <div><p class="project-number">02 / Exploration</p><h3>Echoes Below</h3></div>
+            <p>Descend through a silent caldera lake and piece together the songs of a sunken city.</p>
+          </div>
+        </article>
+
+        <article class="project" data-project="concept">
+          <div class="project-media">
+            <img src="assets/studio/paper-sky.png" alt="A courier gliding above green mountain villages" width="1536" height="1024" loading="lazy">
+            <span class="project-status">Concept</span>
+          </div>
+          <div class="project-copy">
+            <div><p class="project-number">03 / Narrative</p><h3>Paper Sky</h3></div>
+            <p>Carry impossible letters between villages suspended above the clouds.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="studio" id="studio" aria-labelledby="studio-title">
+      <div class="studio-heading">
+        <p class="section-label">The studio</p>
+        <h2 id="studio-title">Made close to the mountain. Built for everywhere.</h2>
+      </div>
+      <div class="studio-body">
+        <p>We are a small Indonesian game studio creating original worlds with a strong sense of atmosphere and identity. Each project begins with one question: where would we love to get lost?</p>
+        <div class="principles" aria-label="Studio principles">
+          <div><span>01</span><strong>Wonder first</strong></div>
+          <div><span>02</span><strong>Play with purpose</strong></div>
+          <div><span>03</span><strong>Worlds with soul</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <p class="section-label">Start a conversation</p>
+      <h2 id="contact-title">Have a story worth building?</h2>
+      <p>For collaborations, publishing, press, or a friendly hello.</p>
+      <div class="contact-actions">
+        <a class="contact-link" href="mailto:hello@rinjanisoftware.com">
+          <span>Email us</span><strong>hello@rinjanisoftware.com</strong><b aria-hidden="true">&#8599;</b>
+        </a>
+        <a class="contact-link contact-link-secondary" href="https://wa.me/?text=Hello%20RinjaniGameStudio" target="_blank" rel="noopener noreferrer">
+          <span>Open</span><strong>WhatsApp</strong><b aria-hidden="true">&#8599;</b>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home" aria-label="Back to top">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
+      <span class="brand-name">RINJANI<span>GAME STUDIO</span></span>
+    </a>
+    <p>&copy; <span id="year">2026</span> RinjaniGameStudio</p>
+    <a href="#home">Back to top &#8593;</a>
   </footer>
 
+  <script src="main.js" defer></script>
 </body>
 </html>
