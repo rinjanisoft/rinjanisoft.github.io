@@ -1,149 +1,396 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="RinjaniGameStudio creates striking, handcrafted game worlds from Indonesia.">
-  <meta name="theme-color" content="#0c1512">
-  <meta property="og:title" content="RinjaniGameStudio">
-  <meta property="og:description" content="Small team. Vast worlds. Games shaped by wonder, place, and play.">
-  <meta property="og:image" content="assets/studio/rinjani-awakening.png">
-  <title>RinjaniGameStudio | Independent Game Studio</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M7 51 26 15l8 16 6-10 17 30Z' fill='%23f15d42'/%3E%3C/svg%3E">
-  <link rel="preload" href="assets/studio/rinjani-awakening.png" as="image">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header" data-header>
-    <a class="brand" href="#home" aria-label="RinjaniGameStudio home">
-      <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
-      <span class="brand-name">RINJANI<span>GAME STUDIO</span></span>
-    </a>
-    <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-button>
-      <span></span><span></span>
-    </button>
-    <nav class="site-nav" aria-label="Main navigation" data-nav>
-      <a href="#projects">Projects</a>
-      <a href="#studio">Studio</a>
-      <a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">&#8599;</span></a>
-    </nav>
-  </header>
-
-  <main id="main">
-    <section class="hero" id="home" aria-labelledby="hero-title">
-      <div class="hero-image" aria-hidden="true"></div>
-      <div class="hero-shade" aria-hidden="true"></div>
-      <div class="hero-grain" aria-hidden="true"></div>
-      <div class="hero-content">
-        <p class="kicker">Independent game studio / Indonesia</p>
-        <h1 id="hero-title"><span>Small team.</span><span>Vast worlds.</span></h1>
-        <p class="hero-intro">We create memorable games shaped by wonder, place, and the simple joy of discovery.</p>
-        <a class="round-link" href="#projects" aria-label="Explore our projects">
-          <span>Explore<br>our worlds</span>
-          <b aria-hidden="true">&#8595;</b>
-        </a>
-      </div>
-      <div class="hero-index" aria-hidden="true">
-        <span>01</span><span>Rinjani Awakening</span><span>Concept world</span>
-      </div>
-    </section>
-
-    <section class="manifesto" aria-labelledby="manifesto-title">
-      <p class="section-label">What moves us</p>
-      <h2 id="manifesto-title">Games should leave a place behind in your memory.</h2>
-      <p>RinjaniGameStudio is an independent team exploring atmospheric worlds, expressive play, and stories that reward curiosity.</p>
-    </section>
-
-    <section class="projects" id="projects" aria-labelledby="projects-title">
-      <div class="section-top">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Rinjani Game Studio is an independent team from Indonesia. Small team, big fun. Meet Blood Saga, our game in development."
+    />
+    <meta name="theme-color" content="#15151b" />
+    <meta property="og:title" content="Rinjani Game Studio — One more round." />
+    <meta
+      property="og:description"
+      content="Small team. Big fun. Discover Blood Saga and what's next."
+    />
+    <meta property="og:image" content="assets/blood-saga/title-screen.webp" />
+    <title>Rinjani Game Studio — One more round.</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M7 51 26 15l8 16 6-10 17 30Z' fill='%23d5fa48'/%3E%3C/svg%3E"
+    />
+    <link rel="preload" href="assets/blood-saga/title-screen.webp" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Rinjani Game Studio home"
+        ><span class="brand-mark" aria-hidden="true">R↗</span
+        ><span class="brand-name">RINJANI<small>GAME STUDIO</small></span></a
+      ><span class="header-note">Independent minds. Playful ambitions.</span
+      ><button
+        class="menu-button"
+        type="button"
+        aria-label="Open navigation"
+        aria-controls="navigation"
+        aria-expanded="false"
+        data-menu-button
+      >
+        <span></span><span></span>
+      </button>
+      <nav
+        id="navigation"
+        class="site-nav"
+        aria-label="Main navigation"
+        data-nav
+      >
+        <a href="#projects">Our games</a><a href="#studio">The studio</a
+        ><a class="nav-contact" href="#contact">Say hello ↗</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-topline">
+          <p class="eyebrow">
+            <span class="status-dot"></span> Independent game studio · Indonesia
+          </p>
+          <span class="edition">GOOD TIMES IN THE MAKING / 001</span>
+        </div>
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <h1 id="hero-title">
+              SERIOUS<br />ABOUT<br /><span class="fun"
+                >FUN<span class="asterisk" aria-hidden="true">✳</span></span
+              >
+            </h1>
+            <p>
+              That “one more round” feeling?<br />That’s what we’re here to
+              make.
+            </p>
+            <a class="button" href="#projects"
+              >Find your next obsession <span aria-hidden="true">↘</span></a
+            >
+          </div>
+          <div class="hero-showcase">
+            <span class="sticker">SMALL TEAM.<br />BIG PLAY ENERGY.</span
+            ><a
+              class="hero-game"
+              href="#blood-saga"
+              aria-label="Discover Blood Saga, in development"
+              ><div class="game-window">
+                <span>● ● ●</span><span>RINJANI / NOW IN THE LAB</span
+                ><span aria-hidden="true">↗</span>
+              </div>
+              <img
+                src="assets/blood-saga/characters.webp"
+                alt="Blood Saga's cheerful armed blood-drop hero surrounded by colorful monsters"
+                width="1521"
+                height="884"
+              />
+              <div class="game-caption">
+                <span
+                  ><small>MEET YOUR NEXT LITTLE PROBLEM</small
+                  ><strong>Blood Saga</strong></span
+                ><span class="circle-arrow" aria-hidden="true">↗</span>
+              </div></a
+            >
+            <div class="hero-footnote">
+              <span class="status-dot"></span> In development
+              <span class="footnote-line"></span
+              ><span>A little drop. A lot of trouble.</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-bottom">
+          <span>BUILT WITH CURIOSITY. TESTED WITH “AGAIN!”</span
+          ><a href="#projects">Scroll to the good stuff ↓</a>
+        </div>
+      </section>
+      <div class="ticker" aria-hidden="true">
         <div>
-          <p class="section-label">Selected worlds</p>
-          <h2 id="projects-title">Projects</h2>
-        </div>
-        <div class="project-filters" role="group" aria-label="Filter projects">
-          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
-          <button class="filter" type="button" data-filter="development" aria-pressed="false">In development</button>
-          <button class="filter" type="button" data-filter="concept" aria-pressed="false">Concepts</button>
+          JUST ONE MORE ROUND <span>✳</span> SMALL TEAM, BIG FUN
+          <span>✳</span> MADE TO BE PLAYED <span>✳</span> JUST ONE MORE ROUND
+          <span>✳</span>
         </div>
       </div>
-
-      <div class="project-list">
-        <article class="project project-featured" data-project="development">
-          <div class="project-media">
-            <img src="assets/studio/rinjani-awakening.png" alt="Explorer overlooking a luminous volcanic island" width="1879" height="836">
-            <span class="project-status">In development</span>
+      <section
+        class="projects section"
+        id="projects"
+        aria-labelledby="projects-title"
+      >
+        <div class="section-top">
+          <div>
+            <p class="eyebrow">01 / THE GOOD STUFF</p>
+            <h2 id="projects-title">Less talk.<br /><span>More play.</span></h2>
           </div>
-          <div class="project-copy">
-            <div><p class="project-number">01 / Adventure</p><h3>Rinjani Awakening</h3></div>
-            <p>Cross a living volcanic island where every trail shifts with the mountain's breath.</p>
+          <div class="project-intro">
+            <p>
+              Fresh challenges. Strange little heroes.<br />Here’s what’s on our
+              workbench.
+            </p>
+            <div
+              class="project-filters"
+              role="group"
+              aria-label="Filter projects"
+            >
+              <button
+                class="filter is-active"
+                data-filter="all"
+                aria-pressed="true"
+              >
+                All projects</button
+              ><button
+                class="filter"
+                data-filter="development"
+                aria-pressed="false"
+              >
+                In development</button
+              ><button
+                class="filter"
+                data-filter="concept"
+                aria-pressed="false"
+              >
+                Concepts
+              </button>
+            </div>
           </div>
-        </article>
-
-        <article class="project" data-project="concept">
-          <div class="project-media">
-            <img src="assets/studio/echoes-below.png" alt="A diver approaching ancient ruins beneath a blue lake" width="1536" height="1024" loading="lazy">
-            <span class="project-status">Concept</span>
-          </div>
-          <div class="project-copy">
-            <div><p class="project-number">02 / Exploration</p><h3>Echoes Below</h3></div>
-            <p>Descend through a silent caldera lake and piece together the songs of a sunken city.</p>
-          </div>
-        </article>
-
-        <article class="project" data-project="concept">
-          <div class="project-media">
-            <img src="assets/studio/paper-sky.png" alt="A courier gliding above green mountain villages" width="1536" height="1024" loading="lazy">
-            <span class="project-status">Concept</span>
-          </div>
-          <div class="project-copy">
-            <div><p class="project-number">03 / Narrative</p><h3>Paper Sky</h3></div>
-            <p>Carry impossible letters between villages suspended above the clouds.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="studio" id="studio" aria-labelledby="studio-title">
-      <div class="studio-heading">
-        <p class="section-label">The studio</p>
-        <h2 id="studio-title">Made close to the mountain. Built for everywhere.</h2>
-      </div>
-      <div class="studio-body">
-        <p>We are a small Indonesian game studio creating original worlds with a strong sense of atmosphere and identity. Each project begins with one question: where would we love to get lost?</p>
-        <div class="principles" aria-label="Studio principles">
-          <div><span>01</span><strong>Wonder first</strong></div>
-          <div><span>02</span><strong>Play with purpose</strong></div>
-          <div><span>03</span><strong>Worlds with soul</strong></div>
         </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <p class="section-label">Start a conversation</p>
-      <h2 id="contact-title">Have a story worth building?</h2>
-      <p>For collaborations, publishing, press, or a friendly hello.</p>
-      <div class="contact-actions">
-        <a class="contact-link" href="mailto:hello@rinjanisoftware.com">
-          <span>Email us</span><strong>hello@rinjanisoftware.com</strong><b aria-hidden="true">&#8599;</b>
-        </a>
-        <a class="contact-link contact-link-secondary" href="https://wa.me/?text=Hello%20RinjaniGameStudio" target="_blank" rel="noopener noreferrer">
-          <span>Open</span><strong>WhatsApp</strong><b aria-hidden="true">&#8599;</b>
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <a class="brand footer-brand" href="#home" aria-label="Back to top">
-      <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
-      <span class="brand-name">RINJANI<span>GAME STUDIO</span></span>
-    </a>
-    <p>&copy; <span id="year">2026</span> RinjaniGameStudio</p>
-    <a href="#home">Back to top &#8593;</a>
-  </footer>
-
-  <script src="main.js" defer></script>
-</body>
+        <div class="project-list">
+          <article
+            class="project featured"
+            id="blood-saga"
+            data-project="development"
+          >
+            <div class="feature-copy">
+              <p class="project-status">
+                <span class="status-dot"></span> IN DEVELOPMENT
+              </p>
+              <p class="project-number">PROJECT 01 / ACTION SURVIVAL</p>
+              <h3>Blood<br />Saga<span>!</span></h3>
+              <p>
+                Tiny hero. Big trouble. Pick your blood, gear up, and take on a
+                swarm of weird little enemies. How long can you keep the chaos
+                under control?
+              </p>
+              <div class="tags">
+                <span>Choose your character</span><span>Build your loadout</span
+                ><span>Survive the swarm</span>
+              </div>
+              <a class="text-link" href="#blood-gallery"
+                >Take a closer look <span aria-hidden="true">↘</span></a
+              ><small class="development-note"
+                >Work in progress. A first look at what we’re building.</small
+              >
+            </div>
+            <div class="gallery" id="blood-gallery">
+              <div class="gallery-frame">
+                <img
+                  id="gallery-image"
+                  src="assets/blood-saga/gameplay.webp"
+                  alt="Blood Saga gameplay: a sniper blood character fighting enemies in the arena"
+                  width="1575"
+                  height="880"
+                  loading="lazy"
+                /><a
+                  class="expand-image"
+                  id="full-image"
+                  href="assets/blood-saga/gameplay.webp"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Open current Blood Saga screenshot at full size"
+                  >↗</a
+                >
+              </div>
+              <div class="gallery-caption">
+                <span id="gallery-caption" aria-live="polite"
+                  >01 / Into the chaos</span
+                ><span>DEVELOPMENT SCREENSHOTS</span>
+              </div>
+              <div
+                class="gallery-thumbs"
+                role="group"
+                aria-label="Blood Saga screenshots"
+              >
+                <button
+                  class="is-active"
+                  aria-pressed="true"
+                  data-image="gameplay.webp"
+                  data-caption="01 / Into the chaos"
+                  data-alt="Blood Saga gameplay: a sniper blood character fighting enemies in the arena"
+                >
+                  <img
+                    src="assets/blood-saga/gameplay.webp"
+                    alt="Gameplay"
+                    loading="lazy"
+                  /></button
+                ><button
+                  aria-pressed="false"
+                  data-image="characters.webp"
+                  data-caption="02 / Pick your personality"
+                  data-alt="Blood Saga character selection with a colorful cast of blood-drop heroes"
+                >
+                  <img
+                    src="assets/blood-saga/characters.webp"
+                    alt="Characters"
+                    loading="lazy"
+                  /></button
+                ><button
+                  aria-pressed="false"
+                  data-image="loadout.webp"
+                  data-caption="03 / Gear up. Go again."
+                  data-alt="Sniper blood loadout with weapons and four difficulty choices"
+                >
+                  <img
+                    src="assets/blood-saga/loadout.webp"
+                    alt="Loadout"
+                    loading="lazy"
+                  /></button
+                ><button
+                  aria-pressed="false"
+                  data-image="title-screen.webp"
+                  data-caption="04 / Welcome to Blood Saga"
+                  data-alt="Blood Saga title screen featuring the blood-drop hero and colorful monsters"
+                >
+                  <img
+                    src="assets/blood-saga/title-screen.webp"
+                    alt="Title screen"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="project concept" data-project="concept">
+            <div class="concept-image">
+              <img
+                src="assets/studio/echoes-below.png"
+                alt="A diver exploring luminous underwater ruins"
+                width="1536"
+                height="1024"
+                loading="lazy"
+              /><span>EARLY CONCEPT</span>
+            </div>
+            <div class="concept-copy">
+              <div>
+                <p class="project-number">02 / EXPLORATION</p>
+                <h3>Echoes Below</h3>
+              </div>
+              <span class="concept-symbol" aria-hidden="true">↓</span>
+              <p>
+                Dive deeper. Follow your curiosity. An underwater exploration
+                idea we’re playing with.
+              </p>
+            </div>
+          </article>
+          <article class="project concept" data-project="concept">
+            <div class="concept-image">
+              <img
+                src="assets/studio/paper-sky.png"
+                alt="A courier gliding between green mountain villages"
+                width="1536"
+                height="1024"
+                loading="lazy"
+              /><span>EARLY CONCEPT</span>
+            </div>
+            <div class="concept-copy">
+              <div>
+                <p class="project-number">03 / ADVENTURE</p>
+                <h3>Paper Sky</h3>
+              </div>
+              <span class="concept-symbol" aria-hidden="true">↗</span>
+              <p>
+                Catch the wind. Make the delivery. A sky-high adventure idea
+                waiting for its first takeoff.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section
+        class="studio section"
+        id="studio"
+        aria-labelledby="studio-title"
+      >
+        <div class="studio-heading">
+          <p class="eyebrow">02 / THE PEOPLE BEHIND THE PLAY</p>
+          <h2 id="studio-title">
+            Small studio.<br />Big <span>“what if?”</span>
+          </h2>
+          <p>
+            We’re Rinjani Game Studio, an independent team from Indonesia. We
+            make games for the thrill of figuring it out, the laugh when it all
+            goes sideways, and the urge to try again.
+          </p>
+          <p>
+            Our starting point is simple:
+            <strong>is it fun to play?</strong> Then we keep building, testing,
+            and tweaking until the answer is yes.
+          </p>
+        </div>
+        <div class="principles">
+          <div>
+            <span>01</span>
+            <h3>Feel-good gameplay.</h3>
+            <p>
+              Great controls, satisfying choices, and a reason to jump back in.
+            </p>
+          </div>
+          <div>
+            <span>02</span>
+            <h3>A little unexpected.</h3>
+            <p>
+              Oddball characters. Playful ideas. The kind of surprise that makes
+              you grin.
+            </p>
+          </div>
+          <div>
+            <span>03</span>
+            <h3>Better every round.</h3>
+            <p>
+              Try it. Break it. Learn from it. Keep making the fun part better.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="contact section"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <p class="eyebrow">03 / LET’S MAKE SOMETHING CLICK</p>
+        <div class="contact-heading">
+          <h2 id="contact-title">
+            GOOD GAMES.<br />GREAT <span>COMPANY.</span>
+          </h2>
+          <a
+            class="contact-arrow"
+            href="mailto:hello@rinjanisoftware.com"
+            aria-label="Email Rinjani Game Studio"
+            >↗</a
+          >
+        </div>
+        <div class="contact-bottom">
+          <p>
+            Want to work together, talk publishing,<br />or just say “hey, that
+            looks fun”?
+          </p>
+          <a href="mailto:hello@rinjanisoftware.com"
+            >hello@rinjanisoftware.com ↗</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="brand" href="#home"
+        ><span class="brand-mark" aria-hidden="true">R↗</span
+        ><span class="brand-name">RINJANI<small>GAME STUDIO</small></span></a
+      >
+      <p>
+        © <span id="year">2026</span> Rinjani Game Studio · Made in Indonesia
+      </p>
+      <a href="#home">Back to top ↑</a>
+    </footer>
+    <script src="main.js" defer></script>
+  </body>
 </html>
