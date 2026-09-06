@@ -336,6 +336,10 @@ a:focus-visible {
 .section {
   padding: 100px var(--gutter);
 }
+.projects.section {
+  padding-top: 76px;
+  padding-bottom: 76px;
+}
 .section-top {
   display: flex;
   justify-content: space-between;
@@ -393,7 +397,7 @@ h2 {
 .featured {
   grid-column: 1/-1;
   display: grid;
-  grid-template-columns: 0.7fr 1.3fr;
+  grid-template-columns: 0.8fr 1.2fr;
   background: #22222a;
   border: 1px solid var(--line);
   border-radius: 10px;
@@ -465,7 +469,7 @@ h2 {
 }
 .gallery {
   min-width: 0;
-  padding: 24px;
+  padding: 18px;
   background: #1c1c23;
   align-self: stretch;
   display: flex;
@@ -501,7 +505,7 @@ h2 {
   gap: 12px;
   font-size: 12px;
   color: #d0cfd7;
-  margin: 16px 0;
+  margin: 12px 0;
 }
 .gallery-caption > span:last-child {
   font-size: 10px;
@@ -511,7 +515,7 @@ h2 {
 .gallery-thumbs {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 7px;
 }
 .gallery-thumbs button {
   padding: 3px;
@@ -862,6 +866,10 @@ h2 {
     justify-content: flex-end;
   }
   .section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  .projects.section {
     padding-top: 65px;
     padding-bottom: 65px;
   }
