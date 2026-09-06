@@ -692,7 +692,12 @@ h2 {
 .contact-bottom p {
   color: #e1e3ff;
 }
-.contact-bottom > a {
+.contact-links {
+  display: grid;
+  justify-items: end;
+  gap: 14px;
+}
+.contact-links a {
   font-size: clamp(17px, 2vw, 26px);
   border-bottom: 1px solid #ffffff70;
   padding-bottom: 6px;
@@ -925,6 +930,9 @@ h2 {
     align-items: start;
     flex-direction: column;
     gap: 22px;
+  }
+  .contact-links {
+    justify-items: start;
   }
   .site-footer {
     flex-wrap: wrap;
