@@ -50,7 +50,7 @@ document.querySelectorAll("[data-filter]").forEach((button) => {
       project.classList.toggle(
         "is-hidden",
         button.dataset.filter !== "all" &&
-          project.dataset.project !== button.dataset.filter,
+          !project.dataset.project.split(/\s+/).includes(button.dataset.filter),
       );
     });
   });

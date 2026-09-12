@@ -556,6 +556,7 @@ h2 {
   border-radius: 2px;
 }
 .concept-image {
+  display: block;
   position: relative;
   border-radius: 7px;
   overflow: hidden;
@@ -618,7 +619,7 @@ h2 {
   line-height: 1.2;
   letter-spacing: -1px;
 }
-.concept-copy p:last-child {
+.concept-copy > p {
   grid-column: 1/-1;
   max-width: 460px;
   color: var(--muted);
@@ -628,6 +629,24 @@ h2 {
   font-size: 34px;
   color: #9997a4;
   align-self: center;
+}
+.nusantara-art > img:first-child {
+  aspect-ratio: 1672 / 941;
+  object-fit: contain;
+}
+.concept-status {
+  align-self: center;
+  color: var(--lime);
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+.concept-copy > .text-link,
+.concept-note {
+  grid-column: 1 / -1;
+}
+.concept-note {
+  color: var(--muted);
+  font-size: 12px;
 }
 .concept-copy .project-number {
   font-size: 11px;
