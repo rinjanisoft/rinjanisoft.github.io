@@ -225,6 +225,7 @@ a:focus-visible {
 }
 .hero-game {
   display: block;
+  position: relative;
   transform: rotate(-3deg);
   border: 1px solid #77758e;
   border-radius: 12px;
@@ -427,6 +428,13 @@ h2 {
   text-transform: uppercase;
   margin-bottom: 24px;
 }
+.feature-title-logo {
+  display: block;
+  width: min(100%, 330px);
+  height: auto;
+  margin: -18px 0 -13px -14px;
+  mix-blend-mode: screen;
+}
 .feature-copy h3 span {
   color: var(--lime);
 }
@@ -446,6 +454,13 @@ h2 {
   padding: 5px 9px;
   border: 1px solid var(--line);
   border-radius: 3px;
+}
+.platform-note {
+  color: var(--lime);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
 }
 .text-link {
   display: flex;
@@ -479,12 +494,14 @@ h2 {
 .gallery-frame {
   position: relative;
 }
-.gallery-frame > img {
+.gallery-frame > img,
+.gallery-frame > video {
   width: 100%;
   aspect-ratio: 1.785;
   object-fit: contain;
   background: #15151b;
   border-radius: 5px;
+  display: block;
 }
 .expand-image {
   position: absolute;
@@ -875,11 +892,12 @@ h2 {
     right: -9px;
     top: -28px;
   }
+  .game-window {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
   .game-caption {
     padding: 16px 20px;
-  }
-  .game-caption strong {
-    font-size: 27px;
   }
   .hero-footnote {
     font-size: 11px;

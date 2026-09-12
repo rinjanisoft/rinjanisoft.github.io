@@ -61,16 +61,26 @@ document.querySelectorAll('a[href="#blood-saga"]').forEach((link) =>
     document.querySelector('[data-filter="all"]').click();
   }),
 );
-document.querySelectorAll("[data-image]").forEach((button) => {
+document.querySelectorAll("[data-image], [data-video]").forEach((button) => {
   button.addEventListener("click", () => {
-    const source = `assets/blood-saga/${button.dataset.image}`;
     const image = document.querySelector("#gallery-image");
-    image.src = source;
-    image.alt = button.dataset.alt;
-    document.querySelector("#full-image").href = source;
+    const video = document.querySelector("#gallery-video");
+    const mediaLink = document.querySelector("#full-media");
+    const source = `assets/blood-saga/${button.dataset.image || button.dataset.video}`;
+    const isVideo = Boolean(button.dataset.video);
+    image.hidden = isVideo;
+    video.hidden = !isVideo;
+    if (isVideo) {
+      video.load();
+    } else {
+      video.pause();
+      image.src = source;
+      image.alt = button.dataset.alt;
+    }
+    mediaLink.href = source;
     document.querySelector("#gallery-caption").textContent =
       button.dataset.caption;
-    document.querySelectorAll("[data-image]").forEach((item) => {
+    document.querySelectorAll("[data-image], [data-video]").forEach((item) => {
       item.classList.toggle("is-active", item === button);
       item.setAttribute("aria-pressed", String(item === button));
     });

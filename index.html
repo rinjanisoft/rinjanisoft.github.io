@@ -13,13 +13,13 @@
       property="og:description"
       content="Small team. Big fun. Discover Blood Saga and what's next."
     />
-    <meta property="og:image" content="assets/blood-saga/title-screen.webp" />
+    <meta property="og:image" content="assets/blood-saga/characters.webp" />
     <title>Rinjani Game Studio — One more round.</title>
     <link
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M7 51 26 15l8 16 6-10 17 30Z' fill='%23d5fa48'/%3E%3C/svg%3E"
     />
-    <link rel="preload" href="assets/blood-saga/title-screen.webp" as="image" />
+    <link rel="preload" href="assets/blood-saga/characters.webp" as="image" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -79,7 +79,7 @@
               href="#blood-saga"
               aria-label="Discover Blood Saga, in development"
               ><div class="game-window">
-                <span>● ● ●</span><span>RINJANI / NOW IN THE LAB</span
+                <span>RINJANI / NOW IN THE LAB</span
                 ><span aria-hidden="true">↗</span>
               </div>
               <img
@@ -167,7 +167,15 @@
                 <span class="status-dot"></span> IN DEVELOPMENT
               </p>
               <p class="project-number">PROJECT 01 / ACTION SURVIVAL</p>
-              <h3>Blood<br />Saga<span>!</span></h3>
+              <h3>
+                <img
+                  class="feature-title-logo"
+                  src="assets/blood-saga/blood-saga-fire-logo.webp"
+                  alt="Blood Saga"
+                  width="800"
+                  height="576"
+                />
+              </h3>
               <p>
                 Tiny hero. Big trouble. Pick your blood, gear up, and take on a
                 swarm of weird little enemies. How long can you keep the chaos
@@ -177,6 +185,7 @@
                 <span>Choose your character</span><span>Build your loadout</span
                 ><span>Survive the swarm</span>
               </div>
+              <p class="platform-note">COMING TO PC · iOS · ANDROID</p>
               <a class="text-link" href="#blood-gallery"
                 >Take a closer look <span aria-hidden="true">↘</span></a
               ><small class="development-note"
@@ -192,13 +201,25 @@
                   width="1575"
                   height="880"
                   loading="lazy"
-                /><a
+                /><video
+                  id="gallery-video"
+                  controls
+                  playsinline
+                  preload="metadata"
+                  poster="assets/blood-saga/trailer-frame.jpg"
+                  hidden
+                >
+                  <source
+                    src="assets/blood-saga/Blood-Saga-Trailer-1080p60.mp4"
+                    type="video/mp4"
+                  />
+                </video><a
                   class="expand-image"
-                  id="full-image"
+                  id="full-media"
                   href="assets/blood-saga/gameplay.webp"
                   target="_blank"
                   rel="noopener"
-                  aria-label="Open current Blood Saga screenshot at full size"
+                  aria-label="Open current Blood Saga media at full size"
                   >↗</a
                 >
               </div>
@@ -248,13 +269,12 @@
                   /></button
                 ><button
                   aria-pressed="false"
-                  data-image="title-screen.webp"
-                  data-caption="04 / Welcome to Blood Saga"
-                  data-alt="Blood Saga title screen featuring the blood-drop hero and colorful monsters"
+                  data-video="Blood-Saga-Trailer-1080p60.mp4"
+                  data-caption="04 / Watch the trailer"
                 >
                   <img
-                    src="assets/blood-saga/title-screen.webp"
-                    alt="Title screen"
+                    src="assets/blood-saga/trailer-frame.jpg"
+                    alt="Blood Saga trailer gameplay preview"
                     loading="lazy"
                   />
                 </button>
