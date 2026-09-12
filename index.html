@@ -192,7 +192,7 @@
                 >Work in progress. A first look at what we’re building.</small
               >
             </div>
-            <div class="gallery" id="blood-gallery">
+            <div class="gallery" id="blood-gallery" data-media-base="assets/blood-saga/">
               <div class="gallery-frame">
                 <img
                   id="gallery-image"
@@ -281,38 +281,54 @@
               </div>
             </div>
           </article>
-          <article class="project concept" id="nusantara-rts" data-project="development rts">
-            <a
-              class="concept-image nusantara-art"
-              href="assets/studio/nusantara-rts.webp"
-              target="_blank"
-              rel="noopener"
-              aria-label="View Nusantara RTS concept art at full size"
-            >
-              <img
-                src="assets/studio/nusantara-rts.webp"
-                alt="Nusantara RTS concept art: an Indonesian village with rice fields, a mosque, school, market, and villagers in a tropical landscape"
-                width="1672"
-                height="941"
-                loading="lazy"
-              />
-            </a>
-            <div class="concept-copy">
-              <div>
-                <p class="project-number">02 / 3D REAL-TIME STRATEGY</p>
-                <h3>Nusantara RTS</h3>
-              </div>
-              <span class="concept-status">IN PROGRESS</span>
+          <article class="project featured nusantara" id="nusantara-rts" data-project="development rts">
+            <div class="feature-copy">
+              <p class="project-status"><span class="status-dot"></span> IN DEVELOPMENT</p>
+              <p class="project-number">PROJECT 02 / 3D REAL-TIME STRATEGY</p>
+              <h3>Nusantara <span>RTS</span></h3>
               <p>
                 A village. A growing community. A world of possibilities.
-                We’re exploring Indonesian-inspired real-time strategy, from
-                rice fields and bustling markets to the buildings that bring
-                a village to life.
+                We’re exploring Indonesian-inspired real-time strategy, where
+                rice fields, bustling markets, and familiar architecture
+                bring a tropical village to life.
               </p>
-              <a class="text-link" href="assets/studio/nusantara-rts.webp" target="_blank" rel="noopener">
-                Explore the concept art <span aria-hidden="true">↗</span>
-              </a>
-              <small class="concept-note">Early concept art · In development. Visuals and gameplay may change.</small>
+              <div class="tags">
+                <span>Village building</span><span>Resource management</span><span>Indonesian-inspired world</span>
+              </div>
+              <p>
+                From homes and granaries to schools and gathering places,
+                discover the community at the heart of our early vision.
+                Take a first look in the trailer and explore the concept studies.
+              </p>
+              <a class="text-link" href="#nusantara-gallery">Take a closer look <span aria-hidden="true">↘</span></a>
+              <small class="development-note">Work in progress. Concept visuals show our early direction; visuals and gameplay may change.</small>
+            </div>
+            <div class="gallery" id="nusantara-gallery" data-media-base="">
+              <div class="gallery-frame">
+                <img src="assets/studio/nusantara-rts.webp" alt="Nusantara RTS concept art showing an Indonesian village with rice fields, a mosque, school, and market" width="1672" height="941" loading="lazy" hidden />
+                <video controls playsinline preload="none" poster="assets/studio/nusantara-rts.webp" aria-label="Nusantara RTS trailer">
+                  <source src="assets/nusantara-rts/Nusantara-RTS-45s.mp4" type="video/mp4" />
+                  <a href="assets/nusantara-rts/Nusantara-RTS-45s.mp4">Download the Nusantara RTS trailer</a>
+                </video>
+                <a class="expand-image" href="assets/nusantara-rts/Nusantara-RTS-45s.mp4" target="_blank" rel="noopener" aria-label="Open current Nusantara RTS media at full size">↗</a>
+              </div>
+              <div class="gallery-caption">
+                <span aria-live="polite">01 / Watch the trailer · 45 seconds</span><span>EARLY LOOK / IN PROGRESS</span>
+              </div>
+              <div class="gallery-thumbs" role="group" aria-label="Nusantara RTS media">
+                <button class="is-active" aria-pressed="true" data-video="assets/nusantara-rts/Nusantara-RTS-45s.mp4" data-caption="01 / Watch the trailer · 45 seconds">
+                  <img src="assets/studio/nusantara-rts.webp" alt="Watch the Nusantara RTS trailer" loading="lazy" /><span>▶ Trailer</span>
+                </button>
+                <button aria-pressed="false" data-image="assets/studio/nusantara-rts.webp" data-caption="02 / A village comes to life · Concept art" data-alt="Nusantara RTS concept art showing an Indonesian village with rice fields, a mosque, school, and market">
+                  <img src="assets/studio/nusantara-rts.webp" alt="Village concept art" loading="lazy" /><span>Concept art</span>
+                </button>
+                <button aria-pressed="false" data-image="assets/studio/indorts-buildings.jpg" data-caption="03 / Building the village · Asset studies" data-alt="Indonesian building studies including homes, warungs, schools, clinics, and pavilions">
+                  <img src="assets/studio/indorts-buildings.jpg" alt="Building studies" loading="lazy" /><span>Buildings</span>
+                </button>
+                <button aria-pressed="false" data-image="assets/studio/indorts-wireframes.png" data-caption="04 / Behind the buildings · Wireframe studies" data-alt="Wireframe development studies for Indonesian RTS buildings">
+                  <img src="assets/studio/indorts-wireframes.png" alt="Building wireframe studies" loading="lazy" /><span>Wireframes</span>
+                </button>
+              </div>
             </div>
           </article>
           <article class="project concept" data-project="rts">

@@ -52,6 +52,9 @@ document.querySelectorAll("[data-filter]").forEach((button) => {
         button.dataset.filter !== "all" &&
           !project.dataset.project.split(/\s+/).includes(button.dataset.filter),
       );
+      if (project.classList.contains("is-hidden")) {
+        project.querySelectorAll("video").forEach((video) => video.pause());
+      }
     });
   });
 });
@@ -63,24 +66,25 @@ document.querySelectorAll('a[href="#blood-saga"]').forEach((link) =>
 );
 document.querySelectorAll("[data-image], [data-video]").forEach((button) => {
   button.addEventListener("click", () => {
-    const image = document.querySelector("#gallery-image");
-    const video = document.querySelector("#gallery-video");
-    const mediaLink = document.querySelector("#full-media");
-    const source = `assets/blood-saga/${button.dataset.image || button.dataset.video}`;
+    const gallery = button.closest(".gallery");
+    const image = gallery.querySelector(".gallery-frame > img");
+    const video = gallery.querySelector("video");
+    const mediaLink = gallery.querySelector(".expand-image");
+    const source = `${gallery.dataset.mediaBase}${button.dataset.image || button.dataset.video}`;
     const isVideo = Boolean(button.dataset.video);
     image.hidden = isVideo;
     video.hidden = !isVideo;
     if (isVideo) {
-      video.load();
+      // Keep the current playback position when selecting the trailer again.
     } else {
       video.pause();
       image.src = source;
       image.alt = button.dataset.alt;
     }
     mediaLink.href = source;
-    document.querySelector("#gallery-caption").textContent =
+    gallery.querySelector(".gallery-caption > span").textContent =
       button.dataset.caption;
-    document.querySelectorAll("[data-image], [data-video]").forEach((item) => {
+    gallery.querySelectorAll("[data-image], [data-video]").forEach((item) => {
       item.classList.toggle("is-active", item === button);
       item.setAttribute("aria-pressed", String(item === button));
     });
