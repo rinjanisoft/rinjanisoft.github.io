@@ -497,6 +497,7 @@ h2 {
 .gallery-frame > img,
 .gallery-frame > video {
   width: 100%;
+  height: auto;
   aspect-ratio: 1.785;
   object-fit: contain;
   background: #15151b;
@@ -993,6 +994,9 @@ h2 {
   }
   .feature-copy > p:not([class]) {
     max-width: none;
+  }
+  .gallery-frame > img {
+    aspect-ratio: auto;
   }
   .gallery {
     padding: 18px;
