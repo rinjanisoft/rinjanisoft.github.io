@@ -392,6 +392,7 @@ h2 {
   grid-template-columns: 1fr 1fr;
   gap: 45px 28px;
 }
+.project[hidden],
 .project.is-hidden {
   display: none;
 }
@@ -727,6 +728,78 @@ h2 {
   font-size: 16px;
   max-width: 360px;
 }
+.team {
+  grid-column: 1 / -1;
+  border-top: 1px solid #15151b30;
+  padding-top: 40px;
+}
+.team h3 {
+  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-size: clamp(36px, 4vw, 56px);
+  line-height: 1.1;
+  margin-bottom: 28px;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+.team-member {
+  padding: 24px;
+  border: 1px solid #15151b30;
+  border-radius: 7px;
+}
+.team-photo {
+  display: block;
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+.team-initial {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: var(--paper);
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.team-role {
+  color: #55545f;
+  font-size: 13px;
+}
+.team-member h4 {
+  font-size: 28px;
+  margin: 4px 0 18px;
+  line-height: 1.2;
+}
+.team-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+}
+.team-links a {
+  color: var(--blue);
+  font-size: 13px;
+  padding-block: 8px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+@media (max-width: 1100px) {
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 450px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .contact {
   background: var(--blue);
   overflow: hidden;
@@ -777,6 +850,11 @@ h2 {
   border-top: 1px solid #ffffff45;
 }
 .contact-bottom p {
+  color: #e1e3ff;
+}
+.studio-address {
+  margin-top: 18px;
+  font-style: normal;
   color: #e1e3ff;
 }
 .contact-links {

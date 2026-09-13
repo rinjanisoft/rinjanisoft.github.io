@@ -75,7 +75,16 @@ document.querySelectorAll("[data-image], [data-video]").forEach((button) => {
     image.hidden = isVideo;
     video.hidden = !isVideo;
     if (isVideo) {
-      // Keep the current playback position when selecting the trailer again.
+      const videoSource = video.querySelector("source");
+      if (videoSource.getAttribute("src") !== source) {
+        video.pause();
+        videoSource.setAttribute("src", source);
+        video.poster = button.dataset.poster || button.querySelector("img").src;
+        const download = video.querySelector("a");
+        if (download) download.href = source;
+        video.load();
+      }
+      video.setAttribute("aria-label", button.dataset.caption);
     } else {
       video.pause();
       image.src = source;
