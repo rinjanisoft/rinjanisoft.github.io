@@ -75,16 +75,23 @@ document.querySelectorAll("[data-image], [data-video]").forEach((button) => {
     image.hidden = isVideo;
     video.hidden = !isVideo;
     if (isVideo) {
-      const videoSource = video.querySelector("source");
-      if (videoSource.getAttribute("src") !== source) {
+      const currentSource = video.getAttribute("src") ||
+        video.querySelector("source")?.getAttribute("src");
+      if (currentSource !== source) {
         video.pause();
-        videoSource.setAttribute("src", source);
+        // Set the media element itself so mobile players discard the old clip.
+        video.setAttribute("src", source);
+        video.preload = "auto";
         video.poster = button.dataset.poster || button.querySelector("img").src;
         const download = video.querySelector("a");
         if (download) download.href = source;
         video.load();
       }
       video.setAttribute("aria-label", button.dataset.caption);
+      const playback = video.play();
+      playback?.catch(() => {
+        // Native controls remain available if the browser blocks playback.
+      });
     } else {
       video.pause();
       image.src = source;

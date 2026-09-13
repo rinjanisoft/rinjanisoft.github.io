@@ -795,9 +795,60 @@ h2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 760px) {
   .team-grid {
     grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .team-member {
+    display: grid;
+    grid-template-columns: 64px minmax(0, 1fr);
+    column-gap: 18px;
+    align-content: center;
+    padding: 22px 0;
+    border: 0;
+    border-bottom: 1px solid #15151b30;
+    border-radius: 0;
+  }
+  .team-member:first-child {
+    border-top: 1px solid #15151b30;
+  }
+  .team-photo,
+  .team-initial {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    align-self: start;
+    width: 64px;
+    height: 64px;
+    margin: 0;
+  }
+  .team-member h4 {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0 0 5px;
+    font-size: 24px;
+  }
+  .team-role {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .team-links {
+    grid-column: 2;
+    grid-row: 3;
+    gap: 0 18px;
+    margin-top: 5px;
+  }
+  .team-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding-block: 10px;
+  }
+  .team .eyebrow {
+    margin-bottom: 14px;
+  }
+  .team h3 {
+    margin-bottom: 24px;
   }
 }
 .contact {
